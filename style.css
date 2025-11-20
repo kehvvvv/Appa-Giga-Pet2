@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 25px;
+    background-color: bisque;
+  }
+  
+  main {
+    display:block;
+    height:175px;
+  }
+  
+  header {
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: #000;
+  }
+
+  .subtitle {
+    font-style: italic;
+    margin-top: 4px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  p {
+    max-width: 600px;
+  }
+  
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    padding-top: 25px;
+    border-top: 1px solid black;
+  }
+  
+  footer a {
+    float:left;
+    margin:5px;
+  }
+  
+  .pet-image {
+    height:250px;
+  }
+  
+  .dashboard div {
+    display:block;
+  }
+  
+  .pet-image-container {
+    float:left;
+    padding:10px;
+  }
+  
+  .dashboard {
+    float:left;
+    padding:20px;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  }
+  
+  .dashboard div {
+    display: block;
+    margin-top: 5px;
+  }
+
+  /* pet selection and add pet form */
+  .pet-Selection,
+  .add-Pet,
+  .pause-Play-Controls {
+    margin-top: 10px;
+  }
+
+  .button-container {
+    margin-top:20px;
+  }
+  
+  .button-container button {
+    width: 100px;
+      margin-right: 10px;
+      text-align: center;
+      display: inline-block;
+      float: left;
+    font-size:15px;
+    background-color: #1e2835;
+    border-color: #404853;
+    cursor:pointer;
+    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
+    color: #fafafa;
+  }
+
+/* Pause Play button and add pet button */
+  .pause-Play-Controls button,
+  #add-Pet-Button {
+    margin-top: 8px;
+    margin-right: 10px;
+    padding: 6px 10px;
+    font-size: 13px;
+    background-color: #edf2edF4;
+    border: 1px solid #404853;
+    cursor: pointer;
+  }
+
+/* Float clearing. Recommended format fix from internet */
+  main::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
