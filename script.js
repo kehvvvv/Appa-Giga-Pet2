@@ -27,7 +27,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
   function setupPetSelector() {
     var selector = $('#pet-Selector');
     for (var i = 0; i < pets.length; i++) {
-      var option = $(<option></option>);
+      var option = $('<option></option>');
       option.val(i);
       option.text(pets[i].name);
       selector.append(option);
