@@ -85,6 +85,21 @@
     margin-top: 10px;
   }
 
+  .pet-Selection label {
+    display: block;
+    margine-bottom: 4px;
+    font-weight: bold;
+  }
+
+  #pet-Selector {
+    width: 220px;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #404853;
+    background-color: #EDF2F4;
+  }
+
   .button-container {
     margin-top:20px;
   }
