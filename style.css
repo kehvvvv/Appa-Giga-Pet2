@@ -32,6 +32,12 @@
   .bold {
     font-weight: bold;
   }
+
+  .reaction-text {
+    margin-top: 10px;
+    font-style: italic;
+    min-height: 1.2em;
+  }
   
   p {
     max-width: 600px;
