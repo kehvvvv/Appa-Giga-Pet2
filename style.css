@@ -84,7 +84,9 @@
   .pet-Selection,
   .add-Pet,
   .pause-Play-Controls {
-    margin-top: 10px;
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .pet-Selection label {
