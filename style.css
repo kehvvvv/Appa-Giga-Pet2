@@ -86,6 +86,18 @@
     margin-top: 5px;
   }
 
+  .dt-demo {
+  margin-top: 14px;
+  padding: 10px;
+  border: 1px solid #111;
+  background: gray;
+}
+
+#dtMathOutput {
+  margin: 8px 0;
+  font-style: italic;
+}
+
   /* pet selection and add pet form */
   .pet-Selection,
   .add-Pet,
@@ -97,7 +109,7 @@
 
   .pet-Selection label {
     display: block;
-    margine-bottom: 4px;
+    margin-bottom: 4px;
     font-weight: bold;
   }
 
@@ -116,10 +128,9 @@
   
   .button-container button {
     width: 100px;
-      margin-right: 10px;
-      text-align: center;
-      display: inline-block;
-      float: left;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
     font-size:15px;
     background-color: #1e2835;
     border-color: #404853;
