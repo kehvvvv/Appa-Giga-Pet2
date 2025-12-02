@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Your Giga Pet</title>
-    <meta name="description" content="A cool thing made with Glitch">
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <script src="https://code.jquery.com/jquery-2.2.1.min.js"
-            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-            crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <body>
-    <header>
-      <h1>
-        This is your Giga Pet
-      </h1>
-      <p class="subtitle">
-        Feed it, play with it, and try not to let it get too upset!
-      </p>
-    </header>
 
-    <main>
-      <section class="pet-image-container">
-         <!-- Replace pet image with your own pet image -->
-        <img class="pet-image" src="appa.png">
-      </section>
-      <section class="dashboard">
-        <div>Name: <strong><span class="name"></span></strong></div>
-        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
-        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
-        <p id="pet-reaction" class="reaction-text">Your pet is waiting...</p>
-        <!-- Pet Selector (Multiple pets allowed)-->
-        <div class="pet-Selection">
-          <label for="pet-Selector">Choose your pet:</label>
-          <select id="pet-Selector"></select>
-        </div>
-        <div class="add-Pet">
-          <input id="new-Pet-Name" type="text" placeholder="New pet name">
-          <button id="add-Pet-Button">Add Pet</button>
-        </div>
-        <!------------------------------------------------->
-        <div class="button-container">
-          <button class="treat-button">
-            Treat
-          </button>
-          <button class="play-button">
-            Play
-          </button>
-          <button class="exercise-button">
-            Exercise
-          </button>
-        </div>
-        <!-- Pause/Play Buttons -->
-        <div class="pause-Play-Controls">
-          <button id="pause-pet">Pause Button></button>
-          <button id="resume-pet">Resume Button</button>
-        </div>
-      </section>
-    </main>
+<head>
+  <title>Your Giga Pet</title>
+  <meta name="description" content="A cool thing made with Glitch">
+  <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"
+  integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
-    <!-- Your web-app is https, so your scripts need to be too -->
-  </body>
+<body>
+  <header>
+    <h1>
+      This is your Giga Pet
+    </h1>
+    <p class="subtitle">
+      Feed it, play with it, and try not to let it get too upset!
+    </p>
+  </header>
+
+  <main>
+    <section class="pet-image-container">
+      <!-- Replace pet image with your own pet image -->
+      <img class="pet-image" src="appa.png">
+    </section>
+    <section class="dashboard">
+      <div>Name: <strong><span class="name"></span></strong></div>
+      <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+      <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+      <p id="pet-reaction" class="reaction-text">Your pet is waiting...</p>
+
+      <!-- DevTools JS Error -->
+      <div class="dt-demo">
+        <div><strong>DevTools JS Error Demo</strong></div>
+        <div id="dtMathOutput">Click the button to run the demo.</div>
+        <button id="dtRunBug">Run 1 + 5</button>
+      </div>
+
+      <!-- Pet Selector (Multiple pets allowed)-->
+      <div class="pet-Selection">
+        <label for="pet-Selector">Choose your pet:</label>
+        <select id="pet-Selector"></select>
+      </div>
+      <div class="add-Pet">
+        <input id="new-Pet-Name" type="text" placeholder="New pet name">
+        <button id="add-Pet-Button">Add Pet</button>
+      </div>
+      <!------------------------------------------------->
+      <div class="button-container">
+        <button class="treat-button">
+          Treat
+        </button>
+        <button class="play-button">
+          Play
+        </button>
+        <button class="exercise-button">
+          Exercise
+        </button>
+      </div>
+      <!-- Pause/Play Buttons -->
+      <div class="pause-Play-Controls">
+        <button id="pause-pet">Pause Button></button>
+        <button id="resume-pet">Resume Button</button>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
