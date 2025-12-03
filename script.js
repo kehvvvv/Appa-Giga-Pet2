@@ -1,17 +1,23 @@
 var pets = [
-  { name: "Appa", weight: 10, happiness: 5 },
-  { name: "Momo", weight: 4, happiness: 7 }
+  { name: "Appa", weight: 10, happiness: 5, img: "appa.png", alt: "Appa, YIP YIP!"},
+  { name: "Momo", weight: 4, happiness: 7, img: "momo.png", alt: "Momo, do something cool." }
 ]
+var petImagePool = ["dog.png", "cow.png", "snake.png"];
 
 var currentPetIndex = 0;
 var pet_info = pets[currentPetIndex]; // variable will always hold "current" object
 $(function () { // Makes sure that your function is called once all the DOM elements of the page are ready to be used.
 
-  // DevTools JS Error 
-  $("#dtRunBug").off("click").on("click", function () {
-    var result = "1" + 2; // <-- INTENTIONAL BUG (string + number)
-    $("#dtMathOutput").text('Bug demo: "1" + 2 = ' + result);
-  });
+// Bug error 
+$("#dtRunBug").off("click").on("click", function () {
+  var a = $("#dtA").val();  // string
+  var b = $("#dtB").val();  // string
+
+  var result = a + b;       // INTENTIONAL BUG: string concatenation
+
+  $("#dtMathOutput").text('Bug demo: "' + a + '" + "' + b + '" = ' + result);
+});
+
 
   setupPetSelector();
   // Called function to update the name, happiness, and weight of our pet in our HTML
@@ -50,13 +56,18 @@ function setupPetSelector() {
     if (newName === "") {
       newName = "New Pet (" + (pets.length + 1) + ")";
     }
+    var imgIndex = pets.length % petImagePool.length;
+    var chosenImg = petImagePool[imgIndex];
+
     var newPet = {
       name: newName,
       weight: 10,
-      happiness: 5
+      happiness: 5,
+      img: chosenImg,
+      alt: newName + " the giga pet"
     };
 
-    pets.push(newPut);
+    pets.push(newPet);
     var newOption = $('<option></option>');
     newOption.val(pets.length - 1);
     newOption.text(newPet.name);
@@ -125,6 +136,8 @@ function updatePetInfoInHtml() {
   $('.name').text(pet_info['name']);
   $('.weight').text(pet_info['weight']);
   $('.happiness').text(pet_info['happiness']);
+  $("#petImg").attr("src", pet_info.img);
+  $("#petImg").attr("alt", pet_info.alt);
 }
 
 // uses .off() to remove all click handlers from main buttons
