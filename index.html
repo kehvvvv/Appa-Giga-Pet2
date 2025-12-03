@@ -19,6 +19,7 @@
     <h1>
       This is your Giga Pet
     </h1>
+    <p id="consoleProof">Console proof: unchanged</p>
     <p class="subtitle">
       Feed it, play with it, and try not to let it get too upset!
     </p>
@@ -27,7 +28,7 @@
   <main>
     <section class="pet-image-container">
       <!-- Replace pet image with your own pet image -->
-      <img class="pet-image" src="appa.png">
+      <img id="petImg" class="pet-image" src="appa.png" alt="Giga pet">
     </section>
     <section class="dashboard">
       <div>Name: <strong><span class="name"></span></strong></div>
@@ -37,10 +38,22 @@
 
       <!-- DevTools JS Error -->
       <div class="dt-demo">
-        <div><strong>DevTools JS Error Demo</strong></div>
-        <div id="dtMathOutput">Click the button to run the demo.</div>
-        <button id="dtRunBug">Run 1 + 5</button>
+        <div><strong>DevTools JS Error</strong></div>
+
+        <div class="dt-row">
+          <label>A</label>
+          <input id="dtA" type="text" value="1">
+        </div>
+
+        <div class="dt-row">
+          <label>B</label>
+          <input id="dtB" type="text" value="5">
+        </div>
+
+        <div id="dtMathOutput">Click run to see the bug.</div>
+        <button id="dtRunBug">Run A + B</button>
       </div>
+
 
       <!-- Pet Selector (Multiple pets allowed)-->
       <div class="pet-Selection">
@@ -71,4 +84,5 @@
     </section>
   </main>
 </body>
+
 </html>
